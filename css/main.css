@@ -1,0 +1,711 @@
+html {
+  min-height: 100%;
+  overflow: auto;
+}
+.container {
+  background-size: cover;
+}
+.indexcarousel .item{
+  z-index: -2;
+}
+/* --- styr karusellen --- */
+.indexcarousel .carousel{ 
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -2%;
+}
+.indexcarousel .carousel-control {
+  max-height: 30%;
+  margin-top: 10%;
+  top:0;
+  bottom:0;
+} 
+
+.carousel-control.left,.carousel-control.right { 
+background: none !important; 
+}
+
+.utbildningscarousel {
+  min-height: 50%;
+  margin-top: 10%;
+  margin-bottom:30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.utbildningscarousel .carousel img {
+  border-radius: 8px;
+}
+
+.utbildningscarousel .carousel-indicators li {
+    border: none; 
+    background-color: white;
+    margin-bottom: 25px;   
+}
+
+.utbildningscarousel .carousel-indicators .active {
+    background-color: yellow;
+    margin-bottom: 25px;
+}
+
+.utbildningscarousel .carousel-control .glyphicon,.jumbotronlightutbildning
+.carousel-control .icon-prev, .jumbotronlightutbildning
+.carousel-control .icon-next {
+  color: yellow;
+  width: 80%;
+}
+
+.jumbotronlightutbildning .carousel img {
+  border: 2px solid;
+  border-radius: 25px;
+}
+
+body { /* Detta styr bakgrunden */
+  min-height: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
+  background-image: url('../img/lightgrey.jpg');
+  background-size: cover;
+
+}
+li a{
+  color: white;
+}
+
+#bs-example-navbar-collapse-1 a:hover{
+  background-color: black;
+  color: #bcbcbc;
+}
+
+.jumbotroninlogg li a .active{ /* Styr jumbotronens list-länkar på loginsidan. */
+background-color: white;
+color: black;
+}
+
+.jumbotroninlogg li a { /* Styr jumbotronens list-länkar på loginsidan. */
+background-color: #efefef;
+color: grey;
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+.jumbotroninlogg .nav-tabs { /* Styr jumbotronens tabbar på loginsidan. */
+  float:none;
+  display:inline-block;
+
+
+}
+
+
+/* ALLA JUMBOTRONER */
+.jumbotronindex {
+  margin-top: 90px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+}
+
+.jumbotroninlogg { /* Styr jumbotronen på loginsidan. */
+  margin-top: 90px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+}
+
+.jumbotronbekraftat { /* Styr jumbotronen vid bekräftad generering. */
+  margin-top: 90px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+}
+
+/* JUMBOTRONEN PÅ ANVANDARE.PHP */
+.jumbotronanvandare {
+  margin-top: 250px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+  overflow: scroll;
+}
+
+#anvandar_tabell{ /* Styr användartabellen för admin */
+  overflow: scroll;
+  width: 100%;
+}
+#anvandar_tabell th{ /* Styr användartabellen för admin */
+  text-align: left;
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1pt solid lightgrey;
+}
+#anvandar_tabell td{ /* Styr användartabellen för admin */
+  padding-top: 10px;
+  overflow: scroll;
+  text-align: center;
+  border-right: 1pt solid lightgrey;
+}
+/* Texten som echoas ut efter att något tagits bort i användartabellen */
+.tagitsbort{
+  color: green;
+}
+
+.deletebutton img{ /* Ikonen som uppdaterar/tar bort användare */
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-right: 20px;
+}
+/* */
+
+/* JUMBOTRONEN SETTINGS.PHP */
+.jumbotronsettings { /* Styr jumbotronen på profilsidan */
+  margin-top: 90px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+}
+/* JUMBOTRONEN USER.PHP */
+.jumbotronuser {
+  margin-top: 90px;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  display: block;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+  z-index: 1;
+  position: absolute;
+}
+/* JUMBOTRONEN PÅ REGISTER.PHP */
+.jumbotronregister {
+  width: 63%;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+}
+/* JUMBOTRONEN PÅ SEND.PHP */
+.jumbotronregistersend {
+  width: 60%;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+}
+/* JUMBOTRONEN PÅ ADMIN.PHP */
+.jumbotronadmin {
+  width: 63%; 
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px; 
+  opacity: 0.9;
+
+}
+/* styr knappen på utbildningen.php */
+.utbildningsknapp .btn {
+  position: absolute;
+  margin-top: -42px;
+  margin-left: 200px;
+  margin-bottom:30px;
+  background-color: white;
+  color:black;
+}
+/* styr knappen på utbildningen.php */
+.utbildningsknapp .btn:hover{
+ color: white;
+ background-color: #bcbcbc;
+}
+/* Styr knapparna som ligger i jumbotron divar */
+.jumbotron .btn {
+  float: right;
+}
+/* Styr alla h2-rubriker på sidan */
+h2 {
+  text-align: center;
+}
+/* Styr alla menyer som ligger i template.php */
+.navbar {
+  height: 140px;
+  max-height: 100%;
+  background-color: black;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+/* Styr alla menyer som ligger i template.php */
+.navbar-toggle span{
+  background-color: white;
+}
+/* Styr alla menyer som ligger i template.php */
+.navbar-collapse {
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+/* Styr alla menyers länkar, som ligger i template.php */
+.nav a {
+  background-color: black;
+}
+/* Styr texten som beskriver vem som är inloggad */
+.inloggadsom {
+  color: white;
+  margin-left: 13px;
+  margin-top: -70px;
+  float: left;
+ }
+/* Styr sidans logotyp i template.php */
+.logotype {
+  width: 170px;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
+}
+/* Styr knappen som tar användaren tillbaka till index.php */
+#tillbaka{
+  margin: 0 auto;
+}
+/* Styr bilden som syns på bekraftat.php */
+.confirmbild {
+  width: 10%;
+}
+/* Styr slogan som ligger i template.php, med en egen font */
+.slogan {
+  float: right;
+  margin-right: 10px;
+  color: white;
+  margin-top: 105px;
+  font-family: MyCustomFont;
+  font-size: 3.0vw;
+  font-size: 20px;
+}
+/* Styr checkboxarna i jumbotronen */
+.checkbox{
+  float: left;
+  font-family: Helvetica;
+  border-radius: 8px;
+  min-width: 100%;
+}
+.checkbox p{
+  float: left;
+}
+.checkbox li{
+  float: left;
+}
+/* Styr checkboxarnas text i jumbotronen */
+.checkbox p {
+  float: left;
+  margin-top: -3px;
+}
+/* Styr checkboxarna listor i jumbotronen */
+#checkbox_grupp ul{
+  list-style: none;
+  display: block;
+}
+/* Styr text-rutan i formulären */
+textarea{
+  height: 400px;
+}
+/* För Quizet */
+.jumbotronbeta {
+  width: 80%;
+  margin-top: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  opacity: 0.9;
+}
+/* Styr innehållet i testet för gratis-testet */
+#test {
+  height: 250px;
+  text-align: left;
+}
+/* Styr texten som beskriver vilken fråga användaren är på i gratis-testet */
+#test_status {
+  text-align: left;
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+                                          /*------MEDIA QUERIS--------*/
+/* Extra små enheter, mobiltelefoner */
+@media only screen and (max-width: 480px) {
+
+.utbildningscarousel .carousel-control .glyphicon,.jumbotronlightutbildning
+.carousel-control .icon-prev, .jumbotronlightutbildning
+.carousel-control .icon-next {
+  width: 100%;
+  margin-top: 30px;
+} 
+.indexcarousel .carousel{
+  display: none;
+}
+.logotype {
+  display: none;
+}
+.slogan {
+   display: none;
+}
+#bs-example-navbar-collapse-1 { 
+  position: relative;
+  z-index: 1;
+}
+.navbar {
+  height:50px;
+  max-height: 100%;
+}
+.navbar-collapse {
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+}
+.utbildningsknapp .btn {
+  position: absolute;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+}
+.jumbotronbeta .jumbotron #test{
+   font-size: 14px;
+}
+
+.jumbotroninlogg li a .active{
+font-size: 2.8vw;
+}
+
+.jumbotroninlogg li a {
+font-size: 2.8vw;
+}
+.jumbotronsettings{
+ z-index: -1;
+  width:70%;
+}
+.jumbotronuser{
+   z-index: -1;
+}
+.jumbotronadmin {
+  width: 300px;
+}
+}
+/* Små enheter, surfplattor */
+@media only screen and (max-width: 700px) and (min-width: 401px) {
+.logotype {
+   display: none;
+ }
+ .slogan {
+    display: none;
+ }
+.indexcarousel .carousel{
+  display: none;
+}
+ #bs-example-navbar-collapse-1 { 
+  position: relative;
+  z-index: 1;
+}
+.navbar-collapse {
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+}
+
+.jumbotronlightutbildning {
+  position: fixed;
+  z-index: -1;
+}
+
+.jumbotronregister {
+  position: fixed;
+  z-index: -1;
+}
+
+.jumbotronindex {
+  position: fixed;
+  z-index: -1;
+}
+
+.jumbotroninlogg {
+  position: absolute;
+  z-index: -1;
+}
+
+.jumbotronsettings{
+  position: fixed;
+  z-index: -1;
+  width:70%;
+}
+
+.jumbotronuser{
+  position: fixed;
+  z-index: -1;
+}
+.navbar {
+  height:50px;
+  max-height: 100%;
+}
+
+.jumbotronbeta .jumbotron {
+  height: 470px;
+}
+
+.jumbotronbeta .jumbotron #test{
+  font-size: 16px;
+}
+
+.jumbotroninlogg li a .active{
+  font-size: 2.8vw;
+}
+
+.jumbotroninlogg li a {
+  font-size: 2.8vw;
+}
+}
+
+@media only screen and (max-width: 880px) {
+.logotype{
+  width: 140px;
+  left: 50px;
+}
+
+.slogan{
+  font-size: 2.3vw;
+  margin-top: 105px;
+}
+
+.jumbotronsettings{
+ z-index: -1;
+} 
+}
+
+/* Mediumstora enheter, skrivbord, DENNA SOM GJORT SÅ MENYN SER BRA UT I MINDRE LÄGE */
+@media only screen and (max-width: 768px) {
+.logotype {
+  display: none;
+ }
+
+.slogan {
+  display: none;
+ }
+.indexcarousel .carousel{
+  display: none;
+}
+
+#bs-example-navbar-collapse-1 { 
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-collapse {
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+}
+
+.indexcarousel .carousel{
+  margin-top: -4%;
+}
+
+.jumbotronlightutbildning {
+  position: absolute;
+  z-index: -1;
+}
+
+.jumbotronregister {
+  position: absolute;
+  z-index: 0;
+}
+
+.jumbotronabout {
+  position: absolute;
+  z-index: -1;
+}
+.jumbotroninlogg {
+  position: absolute;
+  z-index: 0;
+}
+
+.navbar {
+  height:50px;
+  max-height: 100%;
+}
+
+.jumbotroninlogg .jumbotron{
+  height: 360px;
+}
+
+.jumbotronuser{
+   z-index: -1;
+}
+.checkbox p{
+  font-size: 8pt;
+}
+}
+
+@media only screen and (max-width: 980px) {
+.indexcarousel .carousel{
+  margin-top: -4%;
+}
+.jumbotronanvandare{
+  width: 80%;
+  background-color: #EEEEEE;
+  overflow: scroll;
+}
+}
+
+@media only screen and (max-width: 1080px) {
+.utbildningsknapp .btn {
+  position: absolute;
+  margin-top: 10px;
+  width:50%;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0px;
+  right: 0px;
+}
+#genereringjumbo{
+  min-height: 500px;
+}
+}
+@media only screen and (min-width: 1080px) {
+ .utbildningsknapp .btn {
+  position: absolute;
+  margin-top: -42px;
+  margin-left: 200px;
+  font-size: 1vw;
+}
+.utbildningsknapp .btn {
+  position: absolute;
+  margin-top: -40px;
+}
+}
+
+@media only screen and (min-width: 1600px) {
+.slogan {
+  margin-top: 70px;
+}
+
+li a{
+  font-size: 1vw;
+}
+}
+
+@media only screen and (min-width: 1920px) {
+.slogan {
+  margin-top: 60px;
+}
+
+li a{
+  font-size: 1vw;
+}
+
+.utbildningsknapp .btn {
+  position: absolute;
+  margin-top: -51px;
+}
+}
+@media only screen and (min-width: 481px) {
+#genereringjumbo {
+ min-height: 500px;
+}
+  }
